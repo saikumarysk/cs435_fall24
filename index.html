@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CS435 - Fall 2024</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="description" content="CS435 - Fall 2024">
+    <meta name="keywords" content="CS435,Goyal">
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <style>
+        .hw {
+            color: red;
+        }
+
+        .hw a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+<div id="content">
+
+<h1>COMPSCI 435 - Introduction to Cryptography, Fall 2024
+</h1>
+
+<table>
+<tr>
+	<td><p><b>Lecture Hall:&nbsp;&nbsp;</b><br>
+	</td>
+	<td><p>Sewell Social Sciences 5206, 2:30-3:45PM Monday, Wednesday, Friday</p>
+	</td>
+</tr>
+<tr>
+	<td><p><b>Instructor :&nbsp;&nbsp;</b></p></td>
+	<td><p>Rishab Goyal, rishab.goyal@wisc.edu</p></td>
+</tr>
+<tr>
+	<td valign="top"><p><b>Teaching Assistants :&nbsp;&nbsp;</b><br><br></p></td>
+	<td><p>Abtin Afshar, abtin@cs.wisc.edu
+		<br>Saikumar Yadugiri, saikumar@cs.wisc.edu</p>
+	</td>
+</tr>
+<tr>
+        <td><p><b>Peer Mentor :&nbsp;&nbsp;</b></p></td>
+        <td><p>Sanjay Nagarimadugu, snagarimadug@wisc.edu</p></td>
+</tr>
+<tr>
+        <td><p><b>Cross Listed as:&nbsp;&nbsp;</b></p></td>
+        <td><p>ECE 435, MATH 435</p></td>
+</tr>
+</table>
+
+
+<h2>Course Description</h2>
+<p>
+The objective of this course is to provide an introduction to the theoretical and mathematical underpinnings of modern cryptographic
+toolset such as encryption, authentication, pseudorandomness, collision-resistance, etc. We will also discuss how number-theoretic
+hardnes can be translated to security of various cryptographic systems.
+</p>
+<br />
+<b>Textbook and Notes:</b>
+The course has no required textbook.
+Supplementary notes will be provided through Canvas.
+We strongly recommend the textbook - "Introduction to Modern Cryptography" by Katz and Lindell and use this textbook as an auxiliary resource.
+<br />
+<br />
+<b>Attendance Policy:</b>
+We will be recording your attendance for lectures using TopHat. More details will follow soon. You are expected to attend all lectures. We will allow absences for religious observances and medical emergencies (with a doctor's note). Please talk to instructor about this.
+<br />
+<br />
+<b>Resources:</b>
+<p>
+        <a href="syllabus.pdf">Syllabus</a>
+        |
+	<a href="exams.html">Exam Info</a>
+        |
+        <a href="asn.html">Assignment Info</a>
+        |
+        <a href="office.html">Office Hours</a>
+        |
+	<a href="https://canvas.wisc.edu/courses/426072">Canvas</a>
+	|
+        <a href="https://piazza.com/wisc/fall2024/compsci435">Piazza</a> (ask questions here)
+</p>
+<h2 id="schedule">Tentative Schedule</h2>
+<p>
+<b>Note:</b> <i>Dates for topics and homeworks should be considered tentative and some topics might require multiple lectures</i>.
+</p>
+<table class="tg">
+<tr>
+	<th>Week</th>
+    <th>Lec No.</th>
+    <th>Date</th>
+    <th>Topic</th>
+    <th>Other</th>
+</tr>		
+
+<!-- -->
+				    
+<tr>
+	<td rowspan="2">1</td>
+	<td>1</td>
+	<td>9/4</td>
+    	<td>Course logistics, history and basics of cryptography</td>
+	<td></td>
+</tr>
+<tr>
+	<td>2</td>
+        <td>9/6</td>
+        <td>Perfectly Secure Encryption</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td rowspan="3">2</td>
+	<td>3</td>
+        <td>9/9</td>
+	<td>Perfectly secure encryption (cont.), computational security</td>
+        <td></td>d
+</tr>
+<tr id="shade">
+	<td>4</td>
+        <td>9/11</td>
+        <td>IND-CPA: Security games and reduction</td>
+        <td>PS 1 Out</td>
+</tr>
+<tr id="shade">
+	<td>5</td>
+        <td>9/13</td>
+        <td>IND-CPA: Security games and reduction (cont.)</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr>
+        <td rowspan="3">3</td>
+	<td>6</td>
+        <td>9/16</td>
+        <td>Pseudorandom functions (PRFs)</td>
+        <td></td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>9/18</td>
+        <td>IND-CPA secure encryption via PRFs</td>
+        <td></td>
+</tr>
+<tr>
+	<td>8</td>
+        <td>9/20</td>
+        <td>IND-CPA secure encryption via PRFs (cont.), pseudorandom generators (PRGs)</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td rowspan="3">4</td>
+	<td>9</td>
+        <td>9/23</td>
+        <td>Pseudorandom permutations (PRPs), advanced encryption standard (AES)</td>
+        <td></td>
+</tr>
+<tr id="shade">
+	<td>10</td>
+        <td>9/25</td>
+        <td>Block ciphers</td>
+	<td>PS1 Due<br />PS2 Out</td>
+</tr>
+<tr id="shade">
+	<td>11</td>
+        <td>9/27</td>
+	<td>Beyond encryption, message authentication codes (MACs)</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr>
+        <td rowspan="3">5</td>
+	<td>12</td>
+        <td>9/30</td>
+        <td>MACs (cont.)</td>
+        <td></td>
+</tr>
+<tr>
+	<td>13</td>
+        <td>10/2</td>
+        <td>Collision resistant hash functions (CRHFs), upgrading MACs (from short to long)</td>
+        <td></td>
+</tr>
+<tr>
+	<td>14</td>
+        <td>10/4</td>
+        <td>CRHFs (cont.)</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td rowspan="3">6</td>
+	<td>15</td>
+        <td>10/7</td>
+        <td>CRHFs (cont.)</td>
+        <td></td>
+</tr>
+<tr id="shade">
+	<td>16</td>
+        <td>10/9</td>
+        <td>IND-CCA secure encryption</td>
+	<td>PS2 Due<br />PS3 Out</td>
+</tr>
+<tr id="shade">
+	<td>17</td>
+        <td>10/11</td>
+        <td>IND-CCA secure encryption (cont.)</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr>
+        <td rowspan="3">7</td>
+	<td>18</td>
+        <td>10/14</td>
+	<td>Number theory (GCD, Euclid, and Fermat)</td>
+        <td></td>
+</tr>
+<tr>
+	<td></td>
+        <td>10/16</td>
+	<td colspan="2" align="center"><b>Discussion Section - Mid-Term Exam Review</b></td>
+</tr>
+<tr>
+	<td></td>
+	<td>10/18</td>
+	<td colspan="2" align="center"><b>10/18 - Mid-Term Exam (in class)</b></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td rowspan="3">8</td>
+	<td></td>
+        <td>10/21</td>
+        <td colspan="2" align="center"><b>Discussion Section - Mid-Term Exam Solutions</b></td>
+</tr>
+<tr id="shade">
+	<td></td>
+        <td>10/23</td>
+        <td colspan="2" align="center"><b>Special Discussion Section</b></td>
+</tr>
+<tr id="shade">
+	<td></td>
+        <td>10/25</td>
+        <td colspan="2" align="center"><b>Discussion Section - Number Theory</b></td>
+</tr>
+<!-- -->
+<tr>
+        <td rowspan="3">9</td>
+	<td>19</td>
+        <td>10/28</td>
+        <td>Number theory (cont.)</td>
+        <td></td>
+</tr>
+<tr>
+	<td>20</td>
+        <td>10/30</td>
+	<td>Cryptographic assumptions from number theory (DLog, CDH, DDH)</td>
+	<td>PS3 Due<br /> PS4 Out</td>
+</tr>
+<tr>
+	<td>21</td>
+        <td>11/1</td>
+        <td>Diffie-Hellman key exchange and public-key encryption</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td rowspan="3">10</td>
+	<td>22</td>
+        <td>11/4</td>
+        <td>Public-key encryption (cont.)</td>
+        <td></td>
+</tr>
+<tr id="shade">
+	<td>23</td>
+        <td>11/6</td>
+        <td>Collision resistance via discrete log</td>
+        <td></td>
+</tr>
+<tr id="shade">
+	<td>24</td>
+        <td>11/8</td>
+        <td>(Public-key) Signatures</td>
+        <td></td>
+</tr>
+<!-- -->
+<tr>
+	<td colspan="5", align="center"><b>Classes from 11/11 - 12/11 will include special topics, discussion section, exam reviews</b></td>
+</tr>
+<tr id="shade">
+	<td colspan="5", align="center"><b>11/13 - PS4 Due &amp; PS5 Out</b></td>
+</tr>
+<!-- -->
+<tr>
+	<td colspan="5", align="center"><b>12/6 - PS5 Due</b></td>
+</tr>
+<!-- -->
+<tr id="shade">
+        <td colspan="5" align="center"><b>12/18 - Final Exam</b></td>
+</tr>
+<tr>
+	<td colspan="5" align="center"><b>12/20 - Special Office Hours - Final Exam Solutions</b></td>
+</tr>
+
+
+
+
+
+</table>
+
+
+</div>
+</div>
+</body>
+</html>
